@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="/image/logo.jpg" background-size="cover"></image>
+      <text class="userinfo-nickname"></text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="/image/time.gif" background-size="cover"></image>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+
+
+  <view class="navTop">
+   
+    <input placeholder="搜索" focus="{{focus}}" class="searchInput" value="" bindconfirm='searchInfo' />
+  </view>
+  <scroll-view scroll-y="true" class='listScrollView' style='height:{{listScrollViewHeight}}px'>
+    <block wx:for="{{goodsList}}" wx:for-item="item" wx:key="unique">
+      <view class="list" bindtap='selectTools' id="view{{item}}">
+        <view class='listImageView'>
+          <image src='/image/shopping.png' class='listImage'></image>
+        </view>
+        <view class='listText'>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+
+</view>
