@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+var initOver = false;
 Page({
   data: {
     motto: 'SAI的小工具',
@@ -15,6 +15,11 @@ Page({
     
   },
   onLoad: function () {
+    if (initOver){
+      wx.switchTab({
+        url: '../main/main'
+      });
+    }
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -54,6 +59,7 @@ Page({
 
 setTimeout(function(){
   console.log("2222");
+  initOver=true;
   wx.switchTab({
     url: '../main/main'
   });
