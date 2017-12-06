@@ -8,3 +8,18 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.flexView{
+  flex-direction:row;
+  display: flex;
+  width: 100%
+}
+
+.borderDef{
+  border:#CCCCCC thin solid
+}
+
+.inputText {
+  border: #000 thin solid;
+  border-radius: 10px;
+}

@@ -2,33 +2,121 @@
 <view class="container">
 
 
-  <input placeholder="全APP搜索" focus="{{focus}}" class="searchInput" value="" bindconfirm='searchInfo' />
-  <!-- <view>
-    <view class='topNav'>药妆</view>
-    <view class='topNav'>电器</view>
-
-    <view class='topNav'>母婴</view>
-    <view class='topNav'>日用</view>
-  </view>
-  <scroll-view scroll-x="true" style="white-space: nowrap; display: flex;height:50px;">
-    <view class='topNav'>1</view>
-    <view class='topNav'>2</view>
-
-    <view class='topNav'>3</view>
-    <view class='topNav'>4</view>
-    <view class='topNav'>5</view>
-    <view class='topNav'>6</view>
-  </scroll-view> -->
-  <scroll-view>
-    <block wx:for="{{dataList}}" wx:for-item="item" wx:key="unique">
-      <view class="list" bindtap='selectTools' id="view{{item}}">
-        <image src='/image/shopping.png' class='listImage' ></image>
-        <label class="listText">
-          <text>test {{item}}</text>
-        </label>
+  <!--汇率-->
+  <view style='width:94%;height:15%'>
+    <view class='flexView' style='height:30%;position:relative'>
+      <view class="flexItem1" style='text-align:center'>
+        <picker bindchange="changeFromMoney" class='selectCountry' value="{{curFromMoney}}" range="{{countryList}}" range-key="name">
+          <view class="picker">
+            {{countryList[curFromMoney].name}}
+          </view>
+        </picker>
       </view>
-    </block>
+      <view class="flexItem2">》</view>
+      <view class="flexItem3" style='text-align:center'>
+        <picker bindchange="changeToMoney" class='selectCountry' value="{{curToMoney}}" range="{{countryList}}" range-key="name">
+          <view class="picker">
+            {{countryList[curToMoney].name}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="flexView" style='border-top:none;height:30%;position:relative'>
+      <view class="flexItem1" style=''>
+        <input placeholder="" focus="{{focus}}" class="inputText" value="" bindconfirm='searchInfo' type='number' />
+      </view>
+      <view class="flexItem2">
+        <button type="primary" size='mini' bindtap="primary" bindtap='rateIt'>》</button>
+      </view>
+      <view class="flexItem3">
+        <input placeholder="" focus="{{focus}}" class="inputText" value="" bindconfirm='searchInfo' type='number' />
+      </view>
+    </view>
+  </view>
+  <!--汇率列表-->
+  <view class="spaceBetween borderDef" style='height:30px;line-height:30px;border-bottom:none'>
+      <view class='spaceBetweenLeft'></view>
+      <view class='spaceBetweenRight' style='font-size:12px;color:#CCCCCC'>662.96人民币可直接兑换为</view>
+    </view>
+    
+  <scroll-view style='width:100%;border:1px solid #CCCCCC;height:72%' scroll-y="true" >
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB1</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view>
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB12</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB12</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB12</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB12</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB12</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB12</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
+    <view class="spaceBetween">
+      <view class='spaceBetweenLeft'>人民币RMB123</view>
+      <view class='spaceBetweenRight'>662.96</view>
+    </view> 
   </scroll-view>
 
-
+  <!--底部提示-->
+  <view style='width:100%;border:1px solid #CCCCCC;height:13%'>
+    <view style='padding:3px;font-size:12px;color:#CCCCCC'>
+      1、此为第三方数据
+    </view>
+    <view style='padding:3px;font-size:12px;color:#CCCCCC'>
+    2、数据更新于北京时间2017/12/06 11:00:00,具体汇率以实际成交为准
+    </view>
+  </view>
 </view>

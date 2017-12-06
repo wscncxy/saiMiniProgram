@@ -1,17 +1,19 @@
 {
   "pages": [
+    "pages/rate/index/index",
     "pages/index/index",
     "pages/main/main",
     "pages/knowledge/index/index",
     "pages/shopping/index/index",
     "pages/logs/logs",
-    "pages/rate/index/index"
+    "pages/aboutMe/aboutMe"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "SAI的小工具",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#000000",
@@ -20,16 +22,16 @@
     "position": "bottom",
     "list": [
       {
-        "iconPath": "image/tabNoSelect.png",
-        "selectedIconPath": "image/tabSelect.png",
+        "iconPath": "image/tools.png",
+        "selectedIconPath": "image/tools.jpg", 
         "pagePath": "pages/main/main",
-        "text": "首页"
+        "text": "工具包"
       },
       
       {
-        "iconPath": "image/tabNoSelect.png",
-        "selectedIconPath": "image/tabSelect.png",
-        "pagePath": "pages/logs/logs",
+        "iconPath": "image/tabSelect.jpg",
+        "selectedIconPath": "image/tabSelect.jpg",
+        "pagePath": "pages/aboutMe/aboutMe",
         "text": "AboutMe"
       }
     ]

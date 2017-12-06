@@ -15,9 +15,9 @@ var allDates=[
   },
   {
     "id": 3,
-    "name": "海淘参考",
+    "name": "海淘报价",
     "url": "/pages/shopping/index/index",
-    "icon": "/image/shopping.png"
+    "icon": "/image/shopping.jpg"
   },
   {
     "id": 4,

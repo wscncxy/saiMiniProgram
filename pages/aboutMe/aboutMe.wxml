@@ -1,0 +1,146 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="navTop">
+    <image src='/image/logo.jpg' class='logo'></image>
+  </view>
+
+  <view>
+    <text style='font-weight: bold;font-size:20px'>周翔</text>
+  </view>
+  <view>
+    <text style='font-size:13px;color:#CCCCCC'>一个拖延症晚期的假程序猿</text>
+  </view>
+  <view class='infoView'>
+    <view class='viewTitle'>
+      <text>基本信息</text>
+    </view>
+    <view class='splitView'></view>
+    <view class='contentView'>
+      <view class="contentBase">
+        <text class="infoTitle">学历：</text>
+        <text class="infoText">专升本</text>
+      </view>
+      <view class="contentBase">
+        <text class="infoTitle">毕业院校：</text>
+        <text class="infoText">浙江工业大学</text>
+      </view>
+      <view class="contentBase">
+        <text class="infoTitle">当前所在地：</text>
+        <text class="infoText">上海</text>
+      </view>
+      <view class="contentBase">
+        <text class="infoTitle">Mobile：</text>
+        <text class="infoText">15821811805</text>
+      </view>
+      <view class="contentBase">
+        <text class="infoTitle">Email：</text>
+        <text class="infoText">adeveloper@126.com</text>
+      </view>
+      <view class="contentBase">
+        <text class="infoTitle">WebSite:</text>
+        <text class="infoText">https://www.saiarea.com</text>
+      </view>
+      <view class="contentBase">
+        <text class="infoTitle">Blog:</text>
+        <text class="infoText">http://www.cnblogs.com/adeveloper</text>
+      </view>
+      <view class="contentBase">
+        <text class="infoTitle">GitHub:</text>
+        <text class="infoText">https://github.com/wscncxy</text>
+      </view>
+    </view>
+  </view>
+
+<!--工作经历-->
+  <view class='infoView'>
+    <view class='viewTitle'>
+      <text>工作经历</text>
+    </view>
+    <view class='splitView'></view>
+    <view class='contentView'>
+      <view class='spaceBetween'>
+        <view class='spaceBetweenLeft'>
+          利全信息科技
+        </view>
+        <view class='spaceBetweenRight'>
+          2017.6-至今(六个月)
+        </view>
+      </view>
+      <view class="workTitle">
+        高级JAVA工程师
+      </view>
+      <view class="workContent">
+        负责一些乱七八糟的小项目，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+      </view>
+    </view>
+    <view class='splitView'></view>
+    <view class='contentView'>
+      <view class='spaceBetween'>
+        <view class='spaceBetweenLeft'>
+          利全信息科技
+        </view>
+        <view class='spaceBetweenRight'>
+          2017.6-至今(六个月)
+        </view>
+      </view>
+      <view class="workTitle">
+        高级JAVA工程师
+      </view>
+      <view class="workContent">
+        负责一些乱七八糟的小项目，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+      </view>
+    </view>
+
+  </view>
+
+  <!--自我评价-->
+  <view class='infoView'>
+    <view class='viewTitle'>
+      <text>自我评价</text>
+    </view>
+    <view class='splitView'></view>
+    <view class="selfContent">
+        <text decode='true'>负责一些乱七八糟的小项目，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</text>
+      </view>
+  </view>
+
+  <!-- 主要项目 -->
+   <view class='infoView'>
+    <view class='viewTitle'>
+      <text>主要项目</text>
+    </view>
+    <view class='splitView'></view>
+    <view class='contentView'>
+      <view class='spaceBetween'>
+        <view class='spaceBetweenLeft'>
+          现金侠后台管理系统
+        </view>
+        <view class='spaceBetweenRight'>
+          2017.6-至今(六个月)
+        </view>
+      </view>
+      <view class="workContent">
+        <text decode='true'>负责一些乱七八糟的小项目，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</text>
+      </view>
+    </view>
+    <view class='splitView'></view>
+    <view class='contentView'>
+      <view class='spaceBetween'>
+        <view class='spaceBetweenLeft'>
+          利全信息科技
+        </view>
+        <view class='spaceBetweenRight'>
+          2017.6-至今(六个月)
+        </view>
+      </view>
+      <view class="workTitle">
+        高级JAVA工程师
+      </view>
+      <view class="workContent">
+        <text decode='true'>负责一些乱七八糟的小项目，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</text>
+      </view>
+    </view>
+
+  </view>
+</view>
