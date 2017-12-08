@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/rate/index/index",
     "pages/index/index",
     "pages/main/main",
     "pages/knowledge/index/index",
-    "pages/shopping/index/index",
     "pages/logs/logs",
+    "pages/rate/index/index",
+    "pages/travel/index/index",
+    "pages/shopping/index/index",
     "pages/aboutMe/aboutMe"
   ],
   "window": {

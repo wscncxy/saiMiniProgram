@@ -2,7 +2,7 @@
 <view class="container">
 
 
-  <view class="navTop">
+  <view class="navTop" style='height:5%;background-color:#FFFFFF'> 
     <picker bindchange="bindPickerChange" class='selectCountry' value="{{index}}" range="{{countryList}}" range-key="name">
       <view class="picker">
         {{countryList[curCountry].name}}
@@ -11,7 +11,7 @@
     <input placeholder="全APP搜索" focus="{{focus}}" class="searchInput" value="" bindconfirm='searchInfo' />
   </view>
 
- <scroll-view scroll-x="true" style="white-space: nowrap; display: flex;">
+  <scroll-view scroll-x="true" style="white-space: nowrap; height:7%;background-color:#FFFFFF;margin-top:2px;">
     <view class='categoryNav selectCategoryNav' style='border-left: none'>热门</view>
     <view class='categoryNav'>药妆</view>
     <view class='categoryNav'>电器</view>
@@ -23,31 +23,37 @@
     <view class='categoryNav'>日用</view>
     <view class='categoryNav'>日用</view>
   </scroll-view>
-  <scroll-view scroll-x="true" style="white-space: nowrap; display: flex;height:35px;">
-    <view class='subCategoryNav'>1</view>
-    <view class='subCategoryNav'>2</view>
-    <view class='subCategoryNav'>3</view>
-    <view class='subCategoryNav'>4</view>
-    <view class='subCategoryNav'>5</view>
-    <view class='subCategoryNav'>6</view>
-    <view class='subCategoryNav'>6</view>
+  <scroll-view scroll-x="true" style="white-space: nowrap; height:5%;background-color:#FFFFFF;margin-top:2px">
+    <view class='subCategoryNav'>药妆</view>
+    <view class='subCategoryNav'>药妆</view>
+    <view class='subCategoryNav selectCategoryNav'>药妆</view>
+    <view class='subCategoryNav'>药妆</view>
+    <view class='subCategoryNav'>药妆</view>
+    <view class='subCategoryNav'>药妆</view>
+    <view class='subCategoryNav'>药妆</view>
+    <view class='subCategoryNav'>药妆</view>
+    <view class='subCategoryNav'>药妆</view>
   </scroll-view>
-  
-  <scroll-view scroll-y="true" class='listScrollView' style='height:{{listScrollViewHeight}}px'>
-    <block wx:for="{{goodsList}}" wx:for-item="item" wx:key="unique">
-      <view class="list" bindtap='selectTools' id="view{{item}}">
-        <view class='listImageView'>
-          <image src='/image/shopping.png' class='listImage'></image>
-        </view>
-        <view class='listText'>
-          <text>{{item.name}}</text>
-        </view>
-        <view class='listPrice'>
-          <text>{{item.price}} {{item.unit}}</text>
+
+  <scroll-view scroll-y="true" style='width:100%;white-space: nowrap; height:82%;margin-top:5px'>
+    <block wx:for="{{goodsList}}" wx:for-item="item" wx:key="unique" wx:for-index="index">
+      <view class='item' bindtap='selectTools' data-url='{{item.url}}'>
+        <view class="itemContent">
+          <view class='itemImg'>
+            <image src='/image/shopping.jpg' class='listImage'></image>
+          </view>
+          <view class='itemTitle'>
+            <text>{{item.name}}</text>
+          </view>
+          <view class='itemPrice'>
+            <text>{{item.price}} {{item.unit}}</text>
+          </view>
         </view>
       </view>
     </block>
   </scroll-view>
+
+
 
 
 </view>

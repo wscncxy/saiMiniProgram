@@ -17,6 +17,7 @@ Page({
     countryList: countryList,
     curFromMoney: 0,
     curToMoney: 2,
+    scrollTop:0,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   onLoad: function () {

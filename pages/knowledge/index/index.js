@@ -1,67 +1,31 @@
 //获取应用实例
 const app = getApp();
-var goodsList = [
-  {
-    "id": 1,
-    "name": "十万个为什么"
-  },
-  {
-    "id": 1,
-    "name": "深入理解计算机系统"
-  },
-  {
-    "id": 1,
-    "name": "人类简史,从上帝的角度看世界"
-  },
-  {
-    "id": 1,
-    "name": "史上最简单的 SpringCloud 教程 | 终章"
-  },
-  {
-    "id": 1,
-    "name": "史上最简单的 SpringCloud 教程 | 终章"
-  },
-  {
-    "id": 1,
-    "name": "史上最简单的 SpringCloud 教程 | 终章"
-  },
-  {
-    "id": 1,
-    "name": "史上最简单的 SpringCloud 教程 | 终章"
-  },
-  {
-    "id": 1,
-    "name": "史上最简单的 SpringCloud 教程 | 终章"
-  },
-  {
-    "id": 1,
-    "name": "SK2精华霜",
-    "price": "90000",
-    "unit": "JPY"
-  },
-  {
-    "id": 1,
-    "name": "SK2精华霜",
-    "price": "10000",
-    "unit": "JPY"
-  }
-];
-var countryList = [{ "id": 1, "key": "china", "name": "中国" }, 
-                    { "id": 1, "key": "usa", "name": "美国" }, 
-                    { "id": 1, "key": "jpa", "name": "日本" }];
+var allDates = ["test2", "test2", "test3"]
+var dataList = allDates;
+var categoryList = [{ "id": 1, "name": "全部" },
+{ "id": 2, "name": "IT" },
+{ "id": 3, "name": "语言" },
+{ "id": 4, "name": "经济" },
+{ "id": 5, "name": "管理" },
+{ "id": 6, "name": "数学" }];
+
 Page({
   data: {
     motto: getApp().data.test,
     userInfo: {},
-    goodsList: goodsList,
+    dataList: dataList,
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    countryList: countryList,
-    curCountry: 0,
-    listScrollViewHeight: (wx.getSystemInfoSync().windowHeight-60)
+    categoryList: categoryList
   },
   selectTools: function (event) {
     console.log(event.currentTarget.id);
+  }, 
+  onLoad: function () {
+    
+    wx.setNavigationBarTitle({
+      title: '知识分享',
+    });
+    
   },
   searchInfo: function (event) {
     var searchText = event.detail.value;
@@ -75,15 +39,7 @@ Page({
     this.setData({ dataList: dataList });
     console.log(dataList);
   },
-  onLoad: function () {
-    wx.setNavigationBarTitle({
-      title: '姿势海洋',
-    })
-  },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      curCountry: e.detail.value
-    })
-  },
+  selectCategory: function (e) {
+    console.log(e.currentTarget.dataset.id);
+  }
 });

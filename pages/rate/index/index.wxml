@@ -22,7 +22,7 @@
       </view>
     </view>
     <view class="flexView" style='border-top:none;height:30%;position:relative'>
-      <view class="flexItem1" style=''>
+      <view class="flexItem1" style=''>  
         <input placeholder="" focus="{{focus}}" class="inputText" value="" bindconfirm='searchInfo' type='number' />
       </view>
       <view class="flexItem2">
@@ -39,7 +39,7 @@
       <view class='spaceBetweenRight' style='font-size:12px;color:#CCCCCC'>662.96人民币可直接兑换为</view>
     </view>
     
-  <scroll-view style='width:100%;border:1px solid #CCCCCC;height:72%' scroll-y="true" >
+  <scroll-view style='width:100%;border:1px solid #CCCCCC;height:72%' scroll-y="true">
     <view class="spaceBetween">
       <view class='spaceBetweenLeft'>人民币RMB1</view>
       <view class='spaceBetweenRight'>662.96</view>

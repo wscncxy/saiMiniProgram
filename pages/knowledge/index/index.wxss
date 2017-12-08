@@ -1,56 +1,56 @@
+page{
+  height: 100%
+}
 .container {
   padding: 2px;
+  padding-left:0px;
+}
+.categoryNav, .subCategoryNav {
+  background-color: #EBEBEB;
+  display: inline-block;
+  text-align: center;
 }
 
-.navTop {
-  width: 100%;
+.categoryNav {
+  width: 20%;
+  padding:5px;
 }
 
+.selectCategoryNav{
+    color:#1C86EE
+}
 .searchInput {
   border: #000 thin solid;
   color: red;
   border-radius: 40px;
   padding-left: 10px;
   font-size: 12px;
-  width: 90%;
-  margin-left: 5px;
+  width: 98%;
   margin-bottom: 15px;
 }
 
-.listScrollView {
-  width: 100%;
-}
-
-.list {
+.list{
   border-bottom: #000 thin solid;
-  width: 96%;
-  padding: 5px;
-  height: 80px;
+  width: 100%;
   display:flex;
+  padding:5px;
+  
 }
 
-.listImageView {
-  width: 50px;
-  height: 60px;
-  text-align: left;
-  line-height: 110px;
-}
-
-.listImage {
+.listImage{
   width: 50px;
   height: 50px;
 }
 
-.listItem {
-  width: 100%;
+.listText{
+  margin-left: 5px;
+  margin-top: 10px;
 }
 
-
-.listText {
-  line-height: 80px;
-  font-size: 16px;
-  width: 100%;
-  margin-left:10px
+.topNav{
+  border-left: #000 solid 1px;
+  border-bottom: #000 solid 1px;
+  width: 100px;
+  height: 20px;
+  display: inline-block
 }
-
-

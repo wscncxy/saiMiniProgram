@@ -22,7 +22,7 @@ var allDates=[
   {
     "id": 4,
     "name": "旅行游记",
-    "url": "/pages/shopping/index/index",
+    "url": "/pages/travel/index/index",
     "icon": "/image/travel.jpg"
   }
 ]
